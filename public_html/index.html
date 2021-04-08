@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Coalmarch Coding Test</title>             
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="This is the Coalmarch Coding Test, coded by Thomas Szypulski">
+        <meta name="keywords" content="HTML5, CSS3, Bootstrap, jQuery, javascript, responsive design, accessibility">
+        <meta name="revisit-after" content="30 days">
+        <meta name="robots" content="all">
+        <link href="Assets/icon.ico" rel="shortcut icon">     
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>   
+        <link href='https://fonts.googleapis.com/css?family=Coda:800' rel='stylesheet' type='text/css'>
+        <!-- Begin CDNs -->
+        <!-- jQuery --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <!--Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- End CDNs -->
+        <link href="css/coalmarch.css" type="text/css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="page">
+            <div class="navRow col-md-12" role="region">
+                <img src="Assets/logo.png" alt="Ion Test" class="logo" />
+                <div class="container">                
+                    <nav class="navbar navbar" role="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                </button>  
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="internal hideMobileNav" id="aboutItem"><a href="#about">about</a></li>                                    
+                                    <li class="internal hideMobileNav" id="servicesItem"><a href="#services">services</a></li>
+                                    <li class="internal hideMobileNav" id="careersItem"><a href="#careers">careers</a></li>
+                                    <li class="internal hideMobileNav" id="blogItem"><a href="#blog">blog</a></li>
+                                    <li class="internal hideMobileNav selected" id="contactItem"><a href="#contact">contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="heroSection col-md-12" role="banner">
+                <h1>This is the hero section</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <input type="button" value="cta button" />
+            </div>
+            <div class="content col-md-12" role="main">
+                <h1>This is the H1 for the page.</h1>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <!-- The above paragraph text fails WCAG contrast guidelines!  I suggest re-evaluating design. -->
+                <div class="tile col-md-3">
+                    <img src="Assets/icon.png" alt="gear icon" class="icon" />
+                    <h2>justo placerat</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="tile col-md-3">
+                    <img src="Assets/icon.png" alt="gear icon" class="icon" />
+                    <h2>justo placerat</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="tile col-md-3">
+                    <img src="Assets/icon.png" alt="gear icon" class="icon" />
+                    <h2>justo placerat</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

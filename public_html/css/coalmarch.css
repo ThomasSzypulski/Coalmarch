@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */ 
+/* ATTENTION!!! My home IDE cannot integrate CSS preprocessors.  
+I am, however, experienced in the use of SASS and .scss files with their 
+capabilities for element nesting and use of variables. */
+body {
+    font-family: "Open Sans", arial, sans-serif;
+    font-size: 1.5em;
+    color:#666F77;
+    background-color:#000000;
+    font-weight:normal;
+    text-align: center;
+}
+div.page {
+    max-width: 1200px;
+    margin: 36px auto;
+    width: 100%;
+    display: block;
+    background-color:#ffffff;
+}
+div.container {
+    width: auto;
+}
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+div.navRow {
+    background-color: #ffffff;
+    padding: 0 64px;
+}
+nav.navbar {
+    float: right;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 0;
+}
+ul.nav.navbar-nav {
+    float: right;
+    margin: 10px 0 10px 0;
+}
+ul.nav.navbar-nav li {
+    border-radius: 10px;
+}
+ul.nav.navbar-nav li.selected {
+    color: #ffffff;
+    background-color: #4ac1ff;
+}
+ul.nav.navbar-nav li a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+ul.nav.navbar-nav li.selected a {
+    color: inherit;
+}
+ul.nav.navbar-nav li a:hover {
+    color: inherit;
+}
+ul.nav.navbar-nav li.selected a:hover {
+    color:#bbbbbb;
+    background-color: #4ac1ff;
+}
+.navbar-toggle {
+    background-image: url(../Assets/coalmarchLogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+img.logo {
+    float: left;
+    position: relative;
+    top: 36px;
+}
+div.heroSection {
+    color: #ffffff;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center 100%;
+    background-image: url(../Assets/hero.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+}
+div.heroSection h1 {
+    text-transform: uppercase;
+    font-weight:500;
+    font-size: 45px;
+    line-height: 28px;
+}
+div.heroSection p {
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+input[type="button"] {
+    color: #ffffff;
+    background-color: #4ac1ff;
+    box-shadow: none;
+    border: none;
+    text-transform: uppercase;
+    padding: 4px;
+    width: 200px;
+    border-radius: 3px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+div.content {
+    background-color: #ffffff;
+    padding: 24px 120px;
+}
+div.content h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 31px;
+    letter-spacing: 0.2px;
+}
+div.content p {
+    color: #bbbbbb;
+    font-size: 16px;
+    margin-bottom: 36px;
+}
+div.tile {
+    width: 31%;
+    background-color: #ffffff;
+    padding: 16px;
+    border: 1px solid #bbbbbb;
+    margin: 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+div.tile h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 0.2px;
+}
+div.tile p {
+    color: inherit;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+div.tile img.icon {
+    background-color: #4ac1ff;
+    padding: 20px;
+    border-radius: 40px;
+}
+@media (max-width: 1199px) {
+    div.content {
+    padding: 24px 70px;
+}
+}
+@media (max-width: 1099px) {
+    div.content {
+    padding: 24px 60px;
+}
+}
+@media (max-width: 991px) {
+    div.content {
+    padding: 24px 50px;
+}
+div.tile {
+}
+}
+@media (max-width: 769px) {
+    div.heroSection {
+        padding: 24px;
+    }
+    div.heroSection h1, div.content h1 {
+        line-height: normal;
+    }
+    div.content {
+    padding: 24px 10px;
+}
+div.tile {
+    width: auto;
+}
+}
